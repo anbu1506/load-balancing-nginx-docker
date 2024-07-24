@@ -1,0 +1,13 @@
+services:
+  nginx:
+    build: ../nginx
+    ports:
+      - "80:80"
+    
+  pyserver1:
+    container_name: server1
+    build: ../server
+
+  pyserver2:
+    container_name: server2
+    build: ../server
